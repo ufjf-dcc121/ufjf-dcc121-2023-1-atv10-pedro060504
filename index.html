@@ -34,5 +34,14 @@
     <footer>
         <p>&copy; Pedro Lucas Torres Garcia</p>
     </footer>
+    <script>
+        const form = document.forms.entrada;
+        form.addEventListener('submit', envia);
+
+        function envia(evento) {
+            evento.preventDefault();
+            console.log('formulário enviado!');
+        }
+    </script>
 </body>
 </html>
